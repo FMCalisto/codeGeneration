@@ -1,0 +1,7 @@
+;; evaluate condition expression
+JZ else
+;; evaluate then block
+JMP endif
+LABEL else
+;; evaluate else block
+LABEL endif
