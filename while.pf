@@ -1,0 +1,6 @@
+LABEL condition
+;; evaluate condition expression
+JZ endwhile
+;; evaluate block
+JMP condition
+LABEL endwhile
