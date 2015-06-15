@@ -34,6 +34,14 @@ pf2asm <program_name>.pf
 yasm -felf <program_name>.asm
 ```
 
+```
+ld -o <program_name> <program_name>.o -lrts
+```
+
+```
+./<program_name>
+```
+
 Please change the ```<program_name>``` for the real name of the program, for example:
 
 ```
@@ -42,4 +50,12 @@ pf2asm while.pf
 
 ```
 yasm -felf while.asm
+```
+
+```
+ld -o while while.o -lrts
+```
+
+```
+./while
 ```
