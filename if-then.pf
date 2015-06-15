@@ -1,0 +1,4 @@
+;; evaluate condition expression
+JZ endif
+;; evaluate then block
+LABEL endif
