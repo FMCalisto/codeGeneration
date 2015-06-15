@@ -1,0 +1,9 @@
+;; evaluate initializer
+LABEL condition
+;; evaluate condition expression
+JZ endfor
+;; evaluate block
+LABEL increment
+;; evaluate increment expression
+JMP condition
+LABEL endfor
