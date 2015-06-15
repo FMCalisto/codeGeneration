@@ -21,3 +21,25 @@ The stack grows in the direction of lower addresses.
 Almost all operations use the stack as input and output (exceptions are PUSH and POP, for returning values from functions in accordance with CDecl), and instructions that use either immediate arguments or arguments in global memory (i.e., with explicit named addressing).
 
 The [Postfix reference guide](https://www.l2f.inesc-id.pt/~david/w/pt/Postfix_Reference_Guide) (a.k.a. Appendix B) contains further details about the Postfix machine and its operations.
+
+## Compiling and Running
+
+To compile the Postfix code directly, pf2asm can be used:
+
+```
+pf2asm <program_name>.pf
+```
+
+```
+yasm -felf <program_name>.asm
+```
+
+Please change the ```<program_name>``` for the real name of the program, for example:
+
+```
+pf2asm while.pf
+```
+
+```
+yasm -felf while.asm
+```
