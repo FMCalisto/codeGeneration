@@ -1,0 +1,6 @@
+GLOBAL functionname,FUNC
+LABEL functionname
+ENTER sizeoflocalvars
+;; evaluate function body
+LEAVE
+RET
